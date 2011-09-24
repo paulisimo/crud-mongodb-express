@@ -1,0 +1,8 @@
+form( method="post", action="/posts")
+    div
+        div
+            span Body :
+            textarea( name="body", rows=20, id="editArticleBody", value="post.body")
+        div 
+        div#editArticleSubmit
+            input( type="submit", value="Send")
