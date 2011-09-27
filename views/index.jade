@@ -1,0 +1,12 @@
+#posts
+  - each post in posts
+    div.post
+      div.created_at= post.date
+      div.h1.title
+        a(href="/posts/"+ post._id.toHexString())!= post.title
+      //div.body= post.body
+      
+      span.button
+        a(href="/posts/edit/"+ post._id.toHexString())!= " edit"
+      span.button
+        a(href="/posts/remove/"+ post._id.toHexString())!= " delete"

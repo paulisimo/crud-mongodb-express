@@ -1,0 +1,56 @@
+body {
+  font-family: "Helvetica Neue", "Lucida Grande", "Arial"; 
+  font-size: 13px; 
+  text-align: left; 
+  color: #fff; 
+  background-color: #333;
+}
+
+#header ul {
+  margin:0;
+  padding:0;
+}
+#header ul li {
+  display:block;
+  display: inline;
+  padding: 0;
+  margin:0;
+}
+
+h1, h2 {
+  margin: 0;
+  font-size: 1em; 
+  color: #343434;
+}
+
+h1 {
+  text-shadow: 1px 2px 2px #ddd; 
+  font-size: 60px;
+}
+
+#articles {
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 320px;
+}
+
+.button a{
+  background: #222 url(/images/alert-overlay.png) repeat-x;
+	display: inline-block;
+	padding: 5px 10px 6px;
+	margin-left: 3px;
+	margin-right: 3px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
