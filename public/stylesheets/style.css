@@ -6,6 +6,12 @@ body {
   background-color: #333;
 }
 
+input, textarea {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Lucida Grande", "Arial"; 
+}
+
 #header ul {
   margin:0;
   padding:0;
@@ -19,13 +25,13 @@ body {
 
 h1, h2 {
   margin: 0;
+  padding: 4px;
   font-size: 1em; 
   color: #343434;
 }
 
 h1 {
-  text-shadow: 1px 2px 2px #ddd; 
-  font-size: 60px;
+  font-size: 2em;
 }
 
 #articles {
@@ -34,7 +40,13 @@ h1 {
   margin-right: auto; 
   width: 320px;
 }
-
+a:hover {
+  text-decoration: underline;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
 .button a{
   background: #222 url(/images/alert-overlay.png) repeat-x;
 	display: inline-block;
@@ -54,3 +66,31 @@ h1 {
 	position: relative;
 	cursor: pointer;
 }
+
+/* Sizes ---------- */
+.small.awesome {
+font-size: 11px;
+}
+.medium.awesome {
+font-size: 13px;
+}
+.large.awesome {
+font-size: 14px;
+padding: 8px 14px 9px;
+}
+ 
+/* Colors ---------- */
+.blue.awesome {
+background-color: #2daebf;
+}
+.red.awesome {
+background-color: #e33100;
+}
+.magenta.awesome {
+background-color: #a9014b;
+}
+.orange.awesome {
+background-color: #ff5c00;
+}
+.yellow.awesome {
+background-color: #ffb515;

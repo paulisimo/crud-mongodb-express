@@ -2,11 +2,12 @@
   - each post in posts
     div.post
       div.created_at= post.date
-      div.h1.title
-        a(href="/posts/"+ post._id.toHexString())!= post.title
+      div.title
+        h1
+          a(href="/posts/"+ post._id.toHexString())!= post.title
       //div.body= post.body
       
       span.button
-        a(href="/posts/edit/"+ post._id.toHexString())!= " edit"
+        a.orange.awesome(href="/posts/edit/"+ post._id.toHexString())!= " edit"
       span.button
-        a(href="/posts/remove/"+ post._id.toHexString())!= " delete"
+        a.red.awesome(href="/posts/remove/"+ post._id.toHexString())!= " delete"
