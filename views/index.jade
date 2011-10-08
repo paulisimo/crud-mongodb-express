@@ -1,13 +1,10 @@
 #posts
-  - each post in posts
-    div.post
-      div.created_at= post.date
-      div.title
+  ul#sortable.post
+    - each post in posts
+      li.title.sortable
         h1
           a(href="/posts/"+ post._id.toHexString())!= post.title
-      //div.body= post.body
-      
-      span.button
-        a.orange.awesome(href="/posts/edit/"+ post._id.toHexString())!= " edit"
-      span.button
-        a.red.awesome(href="/posts/remove/"+ post._id.toHexString())!= " delete"
+        span.button
+          a.orange.awesome(href="/posts/edit/"+ post._id.toHexString())!= " edit"
+        span.button
+          a.red.awesome(href="/posts/remove/"+ post._id.toHexString())!= " delete"

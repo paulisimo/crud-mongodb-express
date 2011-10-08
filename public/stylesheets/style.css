@@ -12,26 +12,33 @@ input, textarea {
   font-family: "Helvetica Neue", "Lucida Grande", "Arial"; 
 }
 
-#header ul {
+ul {
   margin:0;
   padding:0;
 }
-#header ul li {
-  display:block;
-  display: inline;
-  padding: 0;
-  margin:0;
+
+li {
+    display:block;
+    padding: 0;
+    margin:0;
 }
 
-h1, h2 {
+#header ul li {
+  display: inline;
+}
+
+h1, h2, p {
   margin: 0;
   padding: 4px;
-  font-size: 1em; 
-  color: #343434;
+  color: #fff;
 }
 
 h1 {
   font-size: 2em;
+}
+
+p {
+  font-size: 1.8em;
 }
 
 #articles {
